@@ -75,5 +75,10 @@ namespace API_main_emulator
         {
             txt_send.Text = listBox2.SelectedItem.ToString();
         }
+
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_send.Text = listBox3.SelectedItem.ToString();
+        }
     }
 }

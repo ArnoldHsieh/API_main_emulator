@@ -39,6 +39,8 @@ namespace API_main_emulator
             this.btn_connect = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.listBox4 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txt_send
@@ -133,7 +135,7 @@ namespace API_main_emulator
             "GetStatus,Aligner1"});
             this.listBox1.Location = new System.Drawing.Point(123, 71);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(178, 164);
+            this.listBox1.Size = new System.Drawing.Size(142, 164);
             this.listBox1.TabIndex = 13;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -151,17 +153,72 @@ namespace API_main_emulator
             "Home,P5",
             "Home,P6",
             "Home,Aligner1"});
-            this.listBox2.Location = new System.Drawing.Point(307, 71);
+            this.listBox2.Location = new System.Drawing.Point(271, 71);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(178, 164);
+            this.listBox2.Size = new System.Drawing.Size(126, 164);
             this.listBox2.TabIndex = 14;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
+            // listBox3
+            // 
+            this.listBox3.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 16;
+            this.listBox3.Items.AddRange(new object[] {
+            "SetType,P1,0",
+            "SetType,P1,1",
+            "SetType,P2,0",
+            "SetType,P2,1",
+            "SetType,P3,0",
+            "SetType,P3,1",
+            "SetType,P4,0",
+            "SetType,P4,1",
+            "SetType,P5,0",
+            "SetType,P5,1",
+            "SetType,P6,0",
+            "SetType,P6,1"});
+            this.listBox3.Location = new System.Drawing.Point(403, 70);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(119, 196);
+            this.listBox3.TabIndex = 14;
+            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
+            // 
+            // listBox4
+            // 
+            this.listBox4.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.listBox4.FormattingEnabled = true;
+            this.listBox4.ItemHeight = 16;
+            this.listBox4.Items.AddRange(new object[] {
+            "SetAlignerWaferType,Aligner2,04",
+            "SetAlignerWaferType,Aligner2,05",
+            "SetOCRJob,OCRReader1,0123456789AB.job",
+            "ReadFoupID,RFID1",
+            "Load,P1",
+            "GetWaferSlot,P1",
+            "GetWaferThickness,P1",
+            "GetWaferPosition,P1",
+            "WaferGet,Robot1,2,P1,1",
+            "Home,Aligner1",
+            "WaferPut,Robot1,2,Aligner1,1",
+            "Read,OCRReader1",
+            "AlignerVacuum,Aligner1,On",
+            "Alignment,Aligner1,0",
+            "AlignerVacuum,Aligner1,Off",
+            "WaferGet,Robot1,1, Aligner1,1",
+            "WaferPut,Robot1,1,Stage1,1",
+            "WaferGet,Robot1,1,Stage1,1"});
+            this.listBox4.Location = new System.Drawing.Point(528, 71);
+            this.listBox4.Name = "listBox4";
+            this.listBox4.Size = new System.Drawing.Size(302, 292);
+            this.listBox4.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 624);
+            this.ClientSize = new System.Drawing.Size(967, 624);
+            this.Controls.Add(this.listBox4);
+            this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.txt_send);
@@ -191,6 +248,8 @@ namespace API_main_emulator
         private System.Windows.Forms.Button btn_connect;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox listBox4;
     }
 }
 
