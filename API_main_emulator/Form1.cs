@@ -51,21 +51,6 @@ namespace API_main_emulator
             txt_send.Text = "Remote,API";
         }
 
-        private void btn_check_cameras_Click(object sender, EventArgs e)
-        {
-            txt_send.Text = "GetStatus,Robot1";
-        }
-
-        private void btn_GetStatus_P1_Click(object sender, EventArgs e)
-        {
-            txt_send.Text = "GetStatus,P1";
-        }
-
-        private void btn_Home_Robot1_Click(object sender, EventArgs e)
-        {
-            txt_send.Text = "Home,Robot1";
-        }
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             txt_send.Text = listBox1.SelectedItem.ToString();
@@ -79,6 +64,25 @@ namespace API_main_emulator
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             txt_send.Text = listBox3.SelectedItem.ToString();
+        }
+
+        private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_send.Text = listBox4.SelectedItem.ToString();
+        }
+   
+        private void listBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_send.Text = listBox5.SelectedItem.ToString();
+        }
+        private void listBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_send.Text = listBox6.SelectedItem.ToString();
+        }
+
+        private void listBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
