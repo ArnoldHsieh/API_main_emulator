@@ -65,5 +65,15 @@ namespace API_main_emulator
         {
             txt_send.Text = "Home,Robot1";
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_send.Text = listBox1.SelectedItem.ToString();
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_send.Text = listBox2.SelectedItem.ToString();
+        }
     }
 }
