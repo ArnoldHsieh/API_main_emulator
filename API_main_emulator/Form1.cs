@@ -51,38 +51,15 @@ namespace API_main_emulator
             txt_send.Text = "Remote,API";
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void commend_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txt_send.Text = listBox1.SelectedItem.ToString();
+            ListBox box = (ListBox)sender;
+            txt_send.Text = box.SelectedItem.ToString();
         }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void btn_reset_Click(object sender, EventArgs e)
         {
-            txt_send.Text = listBox2.SelectedItem.ToString();
-        }
-
-        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            txt_send.Text = listBox3.SelectedItem.ToString();
-        }
-
-        private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            txt_send.Text = listBox4.SelectedItem.ToString();
-        }
-   
-        private void listBox5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            txt_send.Text = listBox5.SelectedItem.ToString();
-        }
-        private void listBox6_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            txt_send.Text = listBox6.SelectedItem.ToString();
-        }
-
-        private void listBox7_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            txt_send.Text = "ResetError,Aligner1";
         }
     }
 }
